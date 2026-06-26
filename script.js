@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const revealObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('is-revealed');
+                    entry.target.classList.add('scroll-animate');
                     observer.unobserve(entry.target);
                 }
             });
@@ -133,8 +133,7 @@ style.textContent = `
         box-shadow: 0 20px 36px rgba(0, 0, 0, 0.22);
     }
 
-    .scroll-animate,
-    .is-revealed {
+    .scroll-animate {
         animation: fadeInUp 0.7s ease-out both;
     }
 `;
