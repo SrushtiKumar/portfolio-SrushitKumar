@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Srushti Kumar - Data Science Portfolio</title>
+    <title>Srushti Kumar | Software Engineer & Data Specialist</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar retro-taskbar">
         <div class="nav-container">
-            <div class="logo">
-                <span class="logo-text">SK</span>
+            <div class="logo start-btn">
+                <i class="fas fa-terminal"></i>
+                <span class="logo-text">SRUSHTI_OS</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home.sys</a></li>
+                <li><a href="#experience" class="nav-link"><i class="fas fa-folder-open"></i> Journey.log</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Skills.cfg</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects.exe</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact.msg</a></li>
             </ul>
+            <div class="system-time">
+                <i class="far fa-clock"></i> <span id="clock-display">00:00 AM</span>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -29,262 +33,502 @@
         </div>
     </nav>
 
-    <main>
+    <main class="desktop-environment">
+        <!-- HERO SECTION -->
         <section id="home" class="hero hero-block">
             <div class="container hero-grid">
-                <div class="hero-copy">
-                    <p class="eyebrow">Computer Science & Design Undergraduate | Python, SQL & Machine Learning | Data Science and Analytics</p>
-                    <h1 class="hero-title">Hello there, I&apos;m <span class="gradient-text">Srushti Kumar</span></h1>
-                    <p class="hero-description">
-                        Computer Science & Design Engineering graduate (9.44 CGPA) with hands-on experience in Python, SQL, data analysis, and software test automation. Passionate about applying technical skills to solve real-world challenges through data-driven decision-making and collaborative software development.
-                    </p>
-                    <div class="hero-points">
-                        <div class="hero-point"><strong>Focus:</strong> Data Analysis, ML, Test Automation & Cloud Technologies</div>
-                        <div class="hero-point"><strong>Strengths:</strong> Python, SQL, Tableau dashboards, Agile/Scrum, bug identification</div>
-                        <div class="hero-point"><strong>Value:</strong> Fast learner combining technical depth with meticulous attention to detail</div>
+                
+                <!-- Main Intro Window -->
+                <div class="window-card main-intro-window">
+                    <div class="window-header">
+                        <div class="window-title">
+                            <i class="fas fa-file-alt"></i> srushti_intro.txt
+                        </div>
+                        <div class="window-controls">
+                            <span class="control-btn min">—</span>
+                            <span class="control-btn max">▢</span>
+                            <span class="control-btn close">×</span>
+                        </div>
                     </div>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Selected Work</a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/SrushtiKumar" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/srushti-kumar-4019652a2" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="mailto:srushti0404@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <div class="window-content hero-copy">
+                        <p class="eyebrow"><i class="fas fa-circle-notch fa-spin"></i> SYSTEM STATUS: ONLINE • GENERAL_SWE_DATA_V2</p>
+                        <h1 class="hero-title">Hello there, I'm <span class="badge-accent font-space">Srushti Kumar</span></h1>
+                        <p class="hero-description">
+                            Computer Science & Design Engineering graduate (9.44 CGPA) bridging the gap between robust software architecture and data intelligence. Experienced in building full-stack applications, designing test automation pipelines, and engineering machine learning models to solve complex real-world challenges.
+                        </p>
+                        
+                        <div class="hero-points">
+                            <div class="hero-point">
+                                <strong><i class="fas fa-code"></i> Engineering Focus:</strong> Full-Stack Development, ML Pipelines, & QA Test Automation
+                            </div>
+                            <div class="hero-point">
+                                <strong><i class="fas fa-cubes"></i> Core Strengths:</strong> Python, SQL, Java, React, FastAPI, Selenium WebDriver, Tableau
+                            </div>
+                            <div class="hero-point">
+                                <strong><i class="fas fa-bolt"></i> Professional Value:</strong> Meticulous debugging, agile adaptability, and clean design patterns
+                            </div>
+                        </div>
+                        
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary"><i class="fas fa-folder-open"></i> Execute Work_Samples</a>
+                            <a href="#contact" class="btn btn-secondary"><i class="fas fa-comment-dots"></i> Request Connection</a>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/SrushtiKumar" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/srushti-kumar-4019652a2" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:srushti0404@gmail.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="hero-photo-panel">
-                    <div class="tape tape-left"></div>
-                    <div class="tape tape-right"></div>
-                    <div class="polaroid-card">
-                        <div class="portrait-slot">
-                            <i class="fas fa-user-graduate"></i>
-                            <span>Profile Photo</span>
+                <!-- Profile Badge & Console Window -->
+                <div class="hero-sidebar">
+                    <!-- Profile Card Window -->
+                    <div class="window-card profile-photo-window">
+                        <div class="window-header">
+                            <div class="window-title">
+                                <i class="fas fa-camera"></i> portrait_viewer.exe
+                            </div>
+                            <div class="window-controls">
+                                <span class="control-btn min">—</span>
+                                <span class="control-btn max">▢</span>
+                                <span class="control-btn close">×</span>
+                            </div>
                         </div>
-                        <div class="polaroid-caption">
-                            <strong>Data Engineer</strong>
-                            <span>Python • SQL • ML • Tableau</span>
+                        <div class="window-content polaroid-card">
+                            <div class="portrait-slot">
+                                <i class="fas fa-laptop-code"></i>
+                                <span>Webcam Feed Active</span>
+                            </div>
+                            <div class="polaroid-caption">
+                                <strong>Srushti Kumar</strong>
+                                <span>Software & Data Engineer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Live System Terminal Window -->
+                    <div class="window-card console-window">
+                        <div class="window-header">
+                            <div class="window-title">
+                                <i class="fas fa-terminal"></i> system_diagnostic.sh
+                            </div>
+                            <div class="window-controls">
+                                <span class="control-btn min">—</span>
+                                <span class="control-btn max">▢</span>
+                                <span class="control-btn close">×</span>
+                            </div>
+                        </div>
+                        <div class="window-content console-body font-mono">
+                            <p class="console-line text-green">$ fetch profile_meta --details</p>
+                            <p class="console-line">DEGREE: B.E. CS & Design</p>
+                            <p class="console-line">CGPA: 9.44 / 10.00 (KSIT)</p>
+                            <p class="console-line">SKILLS: Python | SQL | Java | Web Dev | ML</p>
+                            <p class="console-line text-yellow">STATUS: Ready for SWE & Data Roles</p>
+                            <p class="console-line cursor-line">_</p>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="hero-doodle hero-doodle-star"></div>
-            <div class="hero-doodle hero-doodle-line"></div>
         </section>
 
-        <section id="experience" class="journey-block cream-block">
+        <!-- JOURNEY / EXPERIENCE SECTION -->
+        <section id="experience" class="journey-block">
             <div class="container">
-                <div class="section-head split-head">
-                    <div>
-                        <p class="section-kicker">Professional Journey</p>
+                
+                <div class="section-head-window window-card">
+                    <div class="window-header">
+                        <div class="window-title">
+                            <i class="fas fa-info-circle"></i> directory_header.txt
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <p class="section-kicker"><i class="fas fa-history"></i> Career & Academic Log</p>
                         <h2 class="section-title dark-title">Experience & Education</h2>
                     </div>
                 </div>
 
                 <div class="journey-grid">
-                    <article class="content-column">
-                        <h3 class="column-title">Experience</h3>
-
-                        <div class="timeline-card">
-                            <div class="timeline-meta">
-                                <span class="timeline-company">Associate Software Engineering Intern</span>
-                                <span class="timeline-date">Feb 2026 - May 2026 • Mphasis</span>
+                    
+                    <!-- Experiences Window -->
+                    <div class="window-card content-column-window">
+                        <div class="window-header">
+                            <div class="window-title">
+                                <i class="fas fa-briefcase"></i> work_history.log
                             </div>
-                            <ul class="achievement-list">
-                                <li>Wrote 45 manual and 10 automated test cases for Banking Web Application's Transfer Funds module using Selenium WebDriver, Java, TestNG, and Cucumber BDD.</li>
-                                <li>Identified 25 bugs pre-release through manual, regression, and API testing (Postman), preventing defects from reaching production.</li>
-                                <li>Worked within an Agile/Scrum sprint cycle; gained exposure to CI/CD pipelines, GitHub workflows, and DevOps practices.</li>
-                            </ul>
-                        </div>
-
-                        <div class="timeline-card">
-                            <div class="timeline-meta">
-                                <span class="timeline-company">Web Developer Intern</span>
-                                <span class="timeline-date">Feb 2025 - Apr 2025 • APSIS Solutions</span>
+                            <div class="window-controls">
+                                <span class="control-btn min">—</span>
+                                <span class="control-btn max">▢</span>
+                                <span class="control-btn close">×</span>
                             </div>
-                            <ul class="achievement-list">
-                                <li>Delivered UI/UX improvements across 4 client projects including IoT sensor dashboard redesigns for ESP32 and a pose-detection fitness platform using HTML, CSS, JavaScript, and Git.</li>
-                                <li>Improved page responsiveness by ~30% and redesigned navigation flows that increased average session time by ~20%.</li>
-                                <li>Collaborated with cross-functional teams to translate design requirements into responsive, pixel-perfect implementations.</li>
-                            </ul>
                         </div>
-
-                        <div class="timeline-card">
-                            <div class="timeline-meta">
-                                <span class="timeline-company">Emerging Technologies (AI & Cloud) Intern</span>
-                                <span class="timeline-date">July 2025 - August 2025 • Edunet Foundation</span>
+                        <div class="window-content content-column">
+                            
+                            <!-- Mphasis -->
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="badge-role">Associate Software Engineering Intern</span>
+                                    <span class="timeline-company"><i class="far fa-building"></i> Mphasis</span>
+                                    <span class="timeline-date"><i class="far fa-calendar-alt"></i> Feb 2026 - May 2026</span>
+                                </div>
+                                <ul class="achievement-list">
+                                    <li>Automated 10 test scenarios and authored 45 test cases for Banking Web Application's Transfer Funds module using **Selenium WebDriver**, **Java**, **TestNG**, and **Cucumber BDD**.</li>
+                                    <li>Identified 25 bugs pre-release through manual, regression, and API testing (**Postman**), preventing defects from reaching production.</li>
+                                    <li>Collaborated in Agile sprints, configuring test reports and managing workflows within Git/GitHub pipelines.</li>
+                                </ul>
                             </div>
-                            <ul class="achievement-list">
-                                <li>Focused on emerging cloud technologies and artificial intelligence applications.</li>
-                                <li>Explored cutting-edge tools and frameworks in the AI and cloud computing landscape.</li>
-                            </ul>
-                        </div>
-                    </article>
 
-                    <article class="content-column">
-                        <h3 class="column-title">Education</h3>
+                            <!-- APSIS Solutions -->
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="badge-role">Web Developer Intern</span>
+                                    <span class="timeline-company"><i class="far fa-building"></i> APSIS Solutions</span>
+                                    <span class="timeline-date"><i class="far fa-calendar-alt"></i> Feb 2025 - Apr 2025</span>
+                                </div>
+                                <ul class="achievement-list">
+                                    <li>Delivered UI/UX features for 4 client sites, including responsive dashboard redesigns for ESP32 IoT nodes and an AI pose-detection fitness page using **HTML**, **CSS**, **JavaScript**, and **Git**.</li>
+                                    <li>Improved page loading speeds by ~30% and redesigned menu flows, increasing average visitor session times by ~20%.</li>
+                                    <li>Worked closely with senior developers to construct high-fidelity mockups into pixel-perfect, responsive responsive views.</li>
+                                </ul>
+                            </div>
 
-                        <div class="edu-card compact-card">
-                            <p class="timeline-company">B.E. in Computer Science & Design Engineering</p>
-                            <p class="timeline-date">2022 - 2026</p>
-                            <p class="edu-detail">K. S. Institute of Technology (Affiliated with Visvesvaraya Technological University)</p>
-                            <p class="edu-detail highlight">CGPA: 9.44 / 10</p>
-                        </div>
+                            <!-- Edunet Foundation -->
+                            <div class="timeline-card">
+                                <div class="timeline-meta">
+                                    <span class="badge-role">Emerging Technologies (AI & Cloud) Intern</span>
+                                    <span class="timeline-company"><i class="far fa-building"></i> Edunet Foundation</span>
+                                    <span class="timeline-date"><i class="far fa-calendar-alt"></i> July 2025 - August 2025</span>
+                                </div>
+                                <ul class="achievement-list">
+                                    <li>Explored cloud microservices, containers, and deep learning architectures.</li>
+                                    <li>Built prototypes leveraging cloud resources and AI models to study service scaling and reliability.</li>
+                                </ul>
+                            </div>
 
-                        <div class="edu-card compact-card">
-                            <p class="timeline-company">Professional Certifications</p>
-                            <p class="timeline-date">2024 - 2025</p>
-                            <p class="edu-detail">Data Science for Engineers (NPTEL) • AI.NXT Workshop (Microsoft) • Software Engineering Job Simulation (Goldman Sachs) • AI & Data Analytics: Green Skills (Shell)</p>
                         </div>
+                    </div>
 
-                        <div class="edu-card compact-card">
-                            <p class="timeline-company">Core Competencies</p>
-                            <p class="timeline-date">Ongoing</p>
-                            <p class="edu-detail">Python, SQL, Machine Learning, Data Analysis, Test Automation, Cloud Technologies, Agentic AI</p>
+                    <!-- Education & Certifications Window -->
+                    <div class="window-card content-column-window">
+                        <div class="window-header">
+                            <div class="window-title">
+                                <i class="fas fa-graduation-cap"></i> academic_history.log
+                            </div>
+                            <div class="window-controls">
+                                <span class="control-btn min">—</span>
+                                <span class="control-btn max">▢</span>
+                                <span class="control-btn close">×</span>
+                            </div>
                         </div>
-                    </article>
+                        <div class="window-content content-column">
+                            
+                            <div class="edu-card compact-card">
+                                <span class="badge-edu">Bachelor of Engineering</span>
+                                <p class="timeline-company">Computer Science & Design Engineering</p>
+                                <p class="timeline-date"><i class="far fa-calendar-alt"></i> 2022 - 2026</p>
+                                <p class="edu-detail">K. S. Institute of Technology (Affiliated with VTU)</p>
+                                <p class="edu-detail highlight"><i class="fas fa-award"></i> Cumulative CGPA: 9.44 / 10</p>
+                            </div>
+
+                            <div class="edu-card compact-card">
+                                <span class="badge-edu">Professional Certifications</span>
+                                <p class="timeline-date"><i class="fas fa-certificate"></i> Credential Log</p>
+                                <ul class="edu-bullets">
+                                    <li><strong>Goldman Sachs:</strong> Software Engineering Job Simulation</li>
+                                    <li><strong>NPTEL:</strong> Data Science for Engineers (Elite Certification)</li>
+                                    <li><strong>Microsoft:</strong> AI.NXT Workshop & Model Architecture</li>
+                                    <li><strong>Shell:</strong> AI & Data Analytics: Green Skills Program</li>
+                                </ul>
+                            </div>
+
+                            <div class="edu-card compact-card">
+                                <span class="badge-edu">Core Engineering Disciplines</span>
+                                <p class="timeline-date"><i class="fas fa-brain"></i> Systems Competency</p>
+                                <p class="edu-detail">Object-Oriented Programming (OOPs), Data Structures & Algorithms (DSA), Relational Database Management Systems (RDBMS), Software Engineering Lifecycle, Neural Networks.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="skills" class="skills skills-block">
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="skills">
             <div class="container">
-                <div class="section-head split-head light-head">
-                    <div>
-                        <p class="section-kicker light-kicker">Core Competencies</p>
-                        <h2 class="section-title light-title">Skills & Tools</h2>
+                
+                <div class="window-card skills-window">
+                    <div class="window-header">
+                        <div class="window-title">
+                            <i class="fas fa-cogs"></i> system_configuration.cfg
+                        </div>
+                        <div class="window-controls">
+                            <span class="control-btn min">—</span>
+                            <span class="control-btn max">▢</span>
+                            <span class="control-btn close">×</span>
+                        </div>
+                    </div>
+                    
+                    <div class="window-content">
+                        <div class="skills-intro">
+                            <p class="section-kicker light-kicker"><i class="fas fa-wrench"></i> Environment Packages</p>
+                            <h2 class="section-title light-title">Skills & Technologies</h2>
+                            <p class="section-summary light-summary">
+                                Configured toolkit of software engineering tools, databases, automation scripts, and analytical dashboards:
+                            </p>
+                        </div>
+
+                        <div class="skills-category-group">
+                            <!-- Software & Web Development -->
+                            <div class="skills-block-card">
+                                <h3 class="skills-card-title"><i class="fas fa-laptop-code"></i> Software & Web Engineering</h3>
+                                <div class="skills-pill-grid">
+                                    <div class="skill-pill"><i class="fab fa-python"></i><span>Python</span></div>
+                                    <div class="skill-pill"><i class="fab fa-java"></i><span>Java</span></div>
+                                    <div class="skill-pill"><i class="fab fa-react"></i><span>React.js</span></div>
+                                    <div class="skill-pill"><i class="fas fa-flask"></i><span>FastAPI</span></div>
+                                    <div class="skill-pill"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                                    <div class="skill-pill"><i class="fab fa-html5"></i><span>HTML5/CSS3</span></div>
+                                    <div class="skill-pill"><i class="fas fa-cube"></i><span>Supabase</span></div>
+                                    <div class="skill-pill"><i class="fas fa-server"></i><span>REST APIs</span></div>
+                                    <div class="skill-pill"><i class="fas fa-code-branch"></i><span>Git/GitHub</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Data Science & Analytics -->
+                            <div class="skills-block-card">
+                                <h3 class="skills-card-title"><i class="fas fa-brain"></i> Data Science & Machine Learning</h3>
+                                <div class="skills-pill-grid">
+                                    <div class="skill-pill"><i class="fas fa-database"></i><span>SQL / MySQL</span></div>
+                                    <div class="skill-pill"><i class="fas fa-chart-line"></i><span>Machine Learning</span></div>
+                                    <div class="skill-pill"><i class="fas fa-chart-pie"></i><span>pandas</span></div>
+                                    <div class="skill-pill"><i class="fas fa-calculator"></i><span>NumPy</span></div>
+                                    <div class="skill-pill"><i class="fas fa-chart-bar"></i><span>Tableau</span></div>
+                                    <div class="skill-pill"><i class="fas fa-th-large"></i><span>Power BI</span></div>
+                                    <div class="skill-pill"><i class="fas fa-book"></i><span>Jupyter Notebook</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Automation & Testing -->
+                            <div class="skills-block-card">
+                                <h3 class="skills-card-title"><i class="fas fa-tasks"></i> QA, Automation & Tools</h3>
+                                <div class="skills-pill-grid">
+                                    <div class="skill-pill"><i class="fas fa-bug"></i><span>Selenium WebDriver</span></div>
+                                    <div class="skill-pill"><i class="fas fa-vial"></i><span>TestNG / Cucumber</span></div>
+                                    <div class="skill-pill"><i class="fas fa-server"></i><span>Postman API</span></div>
+                                    <div class="skill-pill"><i class="fas fa-cloud"></i><span>IBM Cloud</span></div>
+                                    <div class="skill-pill"><i class="fas fa-gears"></i><span>CI/CD Workflows</span></div>
+                                    <div class="skill-pill"><i class="fas fa-list-check"></i><span>Agile / Scrum</span></div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="skills-pill-grid">
-                    <div class="skill-pill"><i class="fab fa-python"></i><span>Python</span></div>
-                    <div class="skill-pill"><i class="fas fa-database"></i><span>SQL</span></div>
-                    <div class="skill-pill"><i class="fas fa-database"></i><span>MySQL</span></div>
-                    <div class="skill-pill"><i class="fas fa-chart-line"></i><span>Tableau</span></div>
-                    <div class="skill-pill"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
-                    <div class="skill-pill"><i class="fas fa-brain"></i><span>Machine Learning</span></div>
-                    <div class="skill-pill"><i class="fab fa-java"></i><span>Java</span></div>
-                    <div class="skill-pill"><i class="fas fa-bug"></i><span>Selenium</span></div>
-                    <div class="skill-pill"><i class="fas fa-vial"></i><span>TestNG</span></div>
-                    <div class="skill-pill"><i class="fas fa-flask"></i><span>FastAPI</span></div>
-                    <div class="skill-pill"><i class="fab fa-react"></i><span>React.js</span></div>
-                    <div class="skill-pill"><i class="fab fa-html5"></i><span>HTML/CSS</span></div>
-                    <div class="skill-pill"><i class="fab fa-js"></i><span>JavaScript</span></div>
-                    <div class="skill-pill"><i class="fas fa-code-branch"></i><span>Git/GitHub</span></div>
-                    <div class="skill-pill"><i class="fas fa-server"></i><span>REST APIs</span></div>
-                    <div class="skill-pill"><i class="fas fa-cube"></i><span>Supabase</span></div>
-                    <div class="skill-pill"><i class="fas fa-cloud"></i><span>IBM Cloud</span></div>
-                    <div class="skill-pill"><i class="fas fa-gears"></i><span>CI/CD</span></div>
-                    <div class="skill-pill"><i class="fas fa-chart-pie"></i><span>pandas</span></div>
-                    <div class="skill-pill"><i class="fas fa-list"></i><span>NumPy</span></div>
-                    <div class="skill-pill"><i class="fas fa-book"></i><span>Jupyter</span></div>
-                    <div class="skill-pill"><i class="fas fa-tasks"></i><span>Agile/Scrum</span></div>
-                </div>
             </div>
         </section>
 
-        <section id="projects" class="projects projects-block">
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="projects">
             <div class="container">
-                <div class="section-head split-head">
-                    <div>
-                        <p class="section-kicker">Portfolio Highlights</p>
-                        <h2 class="section-title dark-title">Projects</h2>
+                
+                <div class="window-card projects-header-window">
+                    <div class="window-header">
+                        <div class="window-title">
+                            <i class="fas fa-folder-open"></i> C:\Srushti\projects.exe
+                        </div>
+                        <div class="window-controls">
+                            <span class="control-btn min">—</span>
+                            <span class="control-btn max">▢</span>
+                            <span class="control-btn close">×</span>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <p class="section-kicker"><i class="fas fa-flask"></i> Executable Modules</p>
+                        <h2 class="section-title dark-title">Software & Data Projects</h2>
                     </div>
                 </div>
 
                 <div class="projects-grid">
-                    <article class="project-card premium-card">
-                        <div class="project-topline">Data Science & ML</div>
-                        <h3 class="project-title">Video Game Market Intelligence & Predictive Engine</h3>
-                        <p class="project-description">Conducted EDA on 16,000+ global video game records using Python (pandas). Built ML pipeline (Random Forest + Logistic Regression) to forecast commercial hit potential, managing 90:10 class imbalance. Delivered interactive Tableau dashboard with executive insights.</p>
-                        <div class="project-tags">
-                            <span>Python</span><span>pandas</span><span>scikit-learn</span><span>Tableau</span>
+                    
+                    <!-- Project 1 -->
+                    <article class="project-card premium-card window-card">
+                        <div class="window-header">
+                            <div class="window-title"><i class="fas fa-file-code"></i> game_predict.py</div>
+                        </div>
+                        <div class="window-content">
+                            <div class="project-topline text-mono">Data Science & ML</div>
+                            <h3 class="project-title">Video Game Market Intelligence Engine</h3>
+                            <p class="project-description">Conducted EDA on 16,000+ global video game records using Python (pandas). Built ML pipeline (Random Forest + Logistic Regression) to forecast commercial hit potential, managing 90:10 class imbalance. Delivered interactive Tableau dashboard with executive insights.</p>
+                            <div class="project-tags font-mono">
+                                <span>Python</span><span>pandas</span><span>scikit-learn</span><span>Tableau</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project-card premium-card">
-                        <div class="project-topline">Agentic AI</div>
-                        <h3 class="project-title">PathPilot - Agentic AI Learning Roadmap Advisor</h3>
-                        <p class="project-description">Built AI-powered learning advisor using IBM Granite LLM that calls APIs from 10+ course platforms (Coursera, YouTube, Udemy) to generate personalised roadmaps. Implemented dialogue flow with adaptive progress tracking for dynamic personalisation.</p>
-                        <div class="project-tags">
-                            <span>IBM Granite LLM</span><span>IBM Cloud</span><span>Python</span><span>APIs</span>
+                    <!-- Project 2 -->
+                    <article class="project-card premium-card window-card">
+                        <div class="window-header">
+                            <div class="window-title"><i class="fas fa-file-code"></i> pathpilot_agent.py</div>
+                        </div>
+                        <div class="window-content">
+                            <div class="project-topline text-mono">Agentic AI / SWE</div>
+                            <h3 class="project-title">PathPilot - Roadmap Advisor Agent</h3>
+                            <p class="project-description">Built AI-powered learning advisor using IBM Granite LLM that calls APIs from 10+ course platforms (Coursera, YouTube, Udemy) to generate personalised roadmaps. Implemented dialogue flow with adaptive progress tracking for dynamic personalisation.</p>
+                            <div class="project-tags font-mono">
+                                <span>IBM Granite LLM</span><span>IBM Cloud</span><span>Python</span><span>REST APIs</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project-card premium-card">
-                        <div class="project-topline">Full-Stack Security</div>
-                        <h3 class="project-title">VeilForge Steganography & Cryptography Platform</h3>
-                        <p class="project-description">Built and beta-tested full-stack steganography web application with 15+ users. Implemented 3 protection modules via FastAPI REST backend and React.js frontend. Hosted on Render with Supabase backend. Published academic research paper.</p>
-                        <div class="project-tags">
-                            <span>React.js</span><span>FastAPI</span><span>Supabase</span><span>Render</span>
+                    <!-- Project 3 -->
+                    <article class="project-card premium-card window-card">
+                        <div class="window-header">
+                            <div class="window-title"><i class="fas fa-file-code"></i> veilforge.js</div>
+                        </div>
+                        <div class="window-content">
+                            <div class="project-topline text-mono">Full-Stack SWE</div>
+                            <h3 class="project-title">VeilForge Steganography Web App</h3>
+                            <p class="project-description">Built and beta-tested full-stack steganography web application with 15+ users. Implemented 3 protection modules via FastAPI REST backend and React.js frontend. Hosted on Render with Supabase backend. Published academic research paper.</p>
+                            <div class="project-tags font-mono">
+                                <span>React.js</span><span>FastAPI</span><span>Supabase</span><span>Steganography</span>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="project-card premium-card">
-                        <div class="project-topline">Hackathon Winner</div>
-                        <h3 class="project-title">SafeDen - Web Safety Solution</h3>
-                        <p class="project-description">Designed and built SafeDen within a 48-hour sprint—a web solution addressing real-world safety challenges. Awarded 3rd Place Winner in Locus CodeForHer Challenge and featured in industry publication.</p>
-                        <div class="project-tags">
-                            <span>HTML/CSS</span><span>JavaScript</span><span>Hackathon</span><span>Award Winner</span>
+                    <!-- Project 4 -->
+                    <article class="project-card premium-card window-card">
+                        <div class="window-header">
+                            <div class="window-title"><i class="fas fa-file-code"></i> safeden.app</div>
+                        </div>
+                        <div class="window-content">
+                            <div class="project-topline text-mono">Frontend SWE / Award</div>
+                            <h3 class="project-title">SafeDen - Web Safety Solution</h3>
+                            <p class="project-description">Designed and built SafeDen within a 48-hour sprint—a web solution addressing real-world safety challenges. Awarded 3rd Place Winner in Locus CodeForHer Challenge and featured in industry publication.</p>
+                            <div class="project-tags font-mono">
+                                <span>HTML/CSS</span><span>JavaScript</span><span>UX Design</span><span>Hackathon Winner</span>
+                            </div>
                         </div>
                     </article>
+
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact contact-block">
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
             <div class="container">
-                <div class="section-head split-head light-head">
-                    <div>
-                        <p class="section-kicker light-kicker">Get in Touch</p>
-                        <h2 class="section-title light-title">Contact</h2>
+                
+                <div class="window-card contact-header-window">
+                    <div class="window-header">
+                        <div class="window-title">
+                            <i class="fas fa-address-book"></i> C:\Srushti\mail.sys
+                        </div>
+                        <div class="window-controls">
+                            <span class="control-btn min">—</span>
+                            <span class="control-btn max">▢</span>
+                            <span class="control-btn close">×</span>
+                        </div>
+                    </div>
+                    <div class="window-content">
+                        <p class="section-kicker light-kicker"><i class="fas fa-paper-plane"></i> Transmission Hub</p>
+                        <h2 class="section-title light-title">Contact & Networks</h2>
                     </div>
                 </div>
 
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:srushti0404@gmail.com">srushti0404@gmail.com</a></p>
+                <div class="contact-grid">
+                    
+                    <!-- Send Message Form Window -->
+                    <div class="window-card contact-form-window">
+                        <div class="window-header">
+                            <div class="window-title">
+                                <i class="fas fa-edit"></i> compose_message.exe
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p><a href="tel:+919632517677">+91 9632517677</a></p>
+                        <div class="window-content">
+                            <form id="contactForm" class="contact-form-visible">
+                                <div class="form-group">
+                                    <label for="name">Sender Name:</label>
+                                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Sender Email:</label>
+                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message Body:</label>
+                                    <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-submit">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact Details Window -->
+                    <div class="window-card contact-info-window">
+                        <div class="window-header">
+                            <div class="window-title">
+                                <i class="fas fa-link"></i> system_shortcuts.ini
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-linkedin"></i>
-                            <div>
-                                <h4>LinkedIn</h4>
-                                <p><a href="https://linkedin.com/in/srushti-kumar-4019652a2">linkedin.com/in/srushti-kumar</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <div>
-                                <h4>GitHub</h4>
-                                <p><a href="https://github.com/SrushtiKumar">github.com/SrushtiKumar</a></p>
+                        <div class="window-content contact-content">
+                            <div class="contact-info">
+                                
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p><a href="mailto:srushti0404@gmail.com">srushti0404@gmail.com</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <h4>Phone</h4>
+                                        <p><a href="tel:+919632517677">+91 9632517677</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fab fa-linkedin"></i>
+                                    <div>
+                                        <h4>LinkedIn</h4>
+                                        <p><a href="https://linkedin.com/in/srushti-kumar-4019652a2" target="_blank" rel="noopener">srushti-kumar-4019652a2</a></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-item">
+                                    <i class="fab fa-github"></i>
+                                    <div>
+                                        <h4>GitHub</h4>
+                                        <p><a href="https://github.com/SrushtiKumar" target="_blank" rel="noopener">github.com/SrushtiKumar</a></p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Srushti Kumar. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="#home">Back to top</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+    <!-- FOOTER TASKBAR -->
+    <footer class="footer taskbar-footer">
+        <div class="container footer-taskbar-container">
+            <p class="status-indicator"><i class="fas fa-check-circle text-green"></i> System Active (Srushti_OS v2.6)</p>
+            <div class="footer-links font-space">
+                <a href="#home"><i class="fas fa-arrow-up"></i> Top</a>
+                <a href="#projects"><i class="fas fa-folder"></i> Projects</a>
+                <a href="#contact"><i class="fas fa-network-wired"></i> Contact</a>
             </div>
         </div>
     </footer>
