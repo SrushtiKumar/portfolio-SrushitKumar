@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent ✓';
                 submitBtn.style.backgroundColor = '#88D49E';
                 
-                logToConsole('System: Mail message sent successfully to Srushti Kumar.');
+                logToConsole('Mail message sent successfully to Srushti Kumar.');
                 contactForm.reset();
 
                 window.setTimeout(() => {
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 windowCard.style.opacity = '0';
                 
                 const title = windowCard.querySelector('.window-title')?.textContent.trim() || 'window';
-                logToConsole(`System: Terminated process ${title}`);
+                logToConsole(`Closed Panel: ${title}`);
                 
                 setTimeout(() => {
                     windowCard.style.display = 'none';
@@ -159,13 +159,13 @@ document.addEventListener('DOMContentLoaded', () => {
         consoleBody.innerHTML = '<p class="console-line cursor-line">_</p>';
 
         const lines = [
-            { text: '$ sh init_diagnostics.sh', type: 'command' },
-            { text: 'Booting SRUSHTI_OS kernel v2.6...', type: 'info' },
-            { text: 'SYSTEM: CS & Design Graduate (9.44 CGPA)', type: 'info' },
-            { text: 'INTERN_1: Software QA Automation at Mphasis', type: 'info' },
-            { text: 'INTERN_2: Frontend Web Dev at APSIS Solutions', type: 'info' },
-            { text: 'STACK: Python | SQL | Java | JS | React | FastAPI', type: 'info' },
-            { text: 'ALL RUNTIME PACKAGES LOADED. SYSTEMS OK.', type: 'success' }
+            { text: 'NAME: Srushti Kumar', type: 'info' },
+            { text: 'DEGREE: B.E. Computer Science & Design', type: 'info' },
+            { text: 'CREDENTIAL: KSIT (Affiliated with VTU)', type: 'info' },
+            { text: 'CGPA: 9.44 / 10.00', type: 'info' },
+            { text: 'FOCUS: Software Dev, QA Automation, Data Analytics', type: 'info' },
+            { text: 'TOOLKIT: Python | SQL | Java | JavaScript | React | FastAPI', type: 'info' },
+            { text: 'PORTFOLIO STATUS: RUNNING AND ONLINE', type: 'success' }
         ];
 
         let lineIndex = 0;
@@ -178,9 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const lineElement = document.createElement('p');
             lineElement.className = 'console-line';
 
-            if (lineData.type === 'command') {
-                lineElement.classList.add('text-green');
-            } else if (lineData.type === 'success') {
+            if (lineData.type === 'success') {
                 lineElement.classList.add('text-yellow');
             }
 
@@ -190,19 +188,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (charIndex < lineData.text.length) {
                     lineElement.textContent += lineData.text[charIndex];
                     charIndex++;
-                    setTimeout(typeChar, 18);
+                    setTimeout(typeChar, 15);
                 } else {
                     consoleBody.insertBefore(lineElement, cursorLine);
                     consoleBody.scrollTop = consoleBody.scrollHeight;
                     lineIndex++;
-                    setTimeout(typeLine, 450);
+                    setTimeout(typeLine, 350);
                 }
             };
 
             typeChar();
         };
 
-        setTimeout(typeLine, 600);
+        setTimeout(typeLine, 400);
     };
 
     // Helper Console Logging
@@ -212,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const cursorLine = consoleBody.querySelector('.cursor-line');
         const newLine = document.createElement('p');
         newLine.className = 'console-line text-yellow';
-        newLine.textContent = `> ${text}`;
+        newLine.textContent = `[Info] ${text}`;
         consoleBody.insertBefore(newLine, cursorLine);
         consoleBody.scrollTop = consoleBody.scrollHeight;
     };
