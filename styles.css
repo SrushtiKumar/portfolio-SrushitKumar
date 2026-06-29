@@ -872,6 +872,38 @@ a {
     font-weight: 700;
 }
 
+.project-action {
+    margin-top: 1.25rem;
+}
+
+.btn-project {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    border: var(--retro-border);
+    border-radius: 4px;
+    box-shadow: 2px 2px 0px var(--retro-dark);
+    background-color: var(--retro-yellow);
+    color: var(--retro-dark);
+    font-family: 'Space Grotesk', sans-serif;
+    transition: var(--transition);
+}
+
+.btn-project:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0px var(--retro-dark);
+}
+
+.btn-project:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px var(--retro-dark);
+}
+
 /* ============================================
    CONTACT SECTION
    ============================================ */
@@ -905,10 +937,15 @@ a {
 }
 
 .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    align-items: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-info-window {
+    max-width: 800px;
+    width: 100%;
 }
 
 .contact-form-window .window-content {
@@ -1119,7 +1156,7 @@ a {
         margin-right: 12px;
     }
 
-    .journey-grid, .contact-grid {
+    .journey-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
