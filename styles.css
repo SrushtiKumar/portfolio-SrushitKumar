@@ -25,6 +25,8 @@
     
     /* Transitions */
     --transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-spring: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ============================================
@@ -465,10 +467,11 @@ a {
     border-radius: 50%;
     font-size: 1.15rem;
     box-shadow: var(--retro-shadow-active);
+    transition: var(--transition-spring);
 }
 
 .social-icon:hover {
-    transform: translate(-2px, -2px);
+    transform: translate(-3px, -3px) scale(1.05);
     box-shadow: 4px 4px 0px var(--retro-dark);
     background-color: var(--retro-yellow);
 }
@@ -507,6 +510,11 @@ a {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: var(--transition-smooth);
+}
+
+.profile-photo-window:hover .profile-img {
+    transform: scale(1.05);
 }
 
 
@@ -615,15 +623,15 @@ a {
     border-radius: var(--border-radius);
     padding: 18px 20px;
     box-shadow: var(--retro-shadow-active);
-    transition: var(--transition);
+    transition: var(--transition-spring);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
 .timeline-card:hover, .edu-card:hover {
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 0px var(--retro-dark);
+    transform: translate(-4px, -4px) rotate(0.4deg);
+    box-shadow: 6px 6px 0px var(--retro-dark);
 }
 
 .timeline-meta {
@@ -808,11 +816,11 @@ a {
     gap: 10px;
     color: var(--retro-dark);
     box-shadow: 2px 2px 0px var(--retro-panel-bg);
-    transition: var(--transition);
+    transition: var(--transition-spring);
 }
 
 .skill-pill:hover {
-    transform: translate(-2px, -2px);
+    transform: translate(-3px, -3px) scale(1.02);
     box-shadow: 4px 4px 0px var(--retro-yellow);
     background-color: var(--retro-yellow);
 }
@@ -847,7 +855,7 @@ a {
 }
 
 .projects-grid .window-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: var(--transition-spring);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -860,8 +868,8 @@ a {
 }
 
 .projects-grid .window-card:hover {
-    transform: translate(-5px, -5px);
-    box-shadow: 9px 9px 0px var(--retro-dark);
+    transform: translate(-6px, -6px) rotate(-0.4deg);
+    box-shadow: 11px 11px 0px var(--retro-dark);
 }
 
 .project-topline {
@@ -1226,20 +1234,7 @@ a {
     }
 }
 
-/* ============================================
-   SCROLL EFFECTS / UTILITIES
-   ============================================ */
 
-.scroll-animate {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.scroll-animate.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .text-mono {
     font-family: 'JetBrains Mono', monospace;
@@ -1247,4 +1242,44 @@ a {
 
 .text-yellow {
     color: var(--retro-yellow);
+}
+
+/* Custom Retro Styled Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: var(--retro-panel-bg);
+    border-left: 2px solid var(--retro-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--retro-card-bg);
+    border: 2px solid var(--retro-dark);
+    box-shadow: inset -2px -2px 0px rgba(0,0,0,0.15);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--retro-yellow);
+}
+
+/* Active Nav Indicator Glow Animation */
+@keyframes nav-pulse {
+    0% { box-shadow: 2px 2px 0px var(--retro-dark); }
+    50% { box-shadow: 2px 2px 8px var(--retro-yellow); }
+    100% { box-shadow: 2px 2px 0px var(--retro-dark); }
+}
+
+.nav-link.active {
+    animation: nav-pulse 2s infinite ease-in-out;
+}
+
+/* Elevated Smooth Scroll Reveal Easing */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
