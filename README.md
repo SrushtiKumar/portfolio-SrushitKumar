@@ -1,4 +1,4 @@
-
+# 💾 Srushti Kumar - Portfolio
 
 ```text
  __________________________________________________________________
@@ -6,10 +6,11 @@
 |------------------------------------------------------------------|
 |                                                                  |
 |   👋 Hello! I am Srushti Kumar                                   |
-|   🎓 B.E. Computer Science & Design Engineering (CGPA 9.44/10)   |
-|   🛠️ Data Science | Full-Stack Dev | QA Test Automation          |
+|   💼 Personal portfolio website showcasing software              |
+|      development, test automation, and data analytics work.      |
 |                                                                  |
-|   [ View Projects ]     [ View Resume ]     [ LinkedIn ]         |
+|   [📄 Access Resume] :                                            |
+|   https://drive.google.com/file/d/11hSNVNlePBWEOFvw_Y9CgN1E9OVlJvor/view
 |__________________________________________________________________|
 ```
 
@@ -17,10 +18,9 @@
 [![License](https://img.shields.io/badge/License-MIT-7EBDFF?style=flat-square)](https://github.com/SrushtiKumar)
 [![Role](https://img.shields.io/badge/Open%20To-Opportunities-FFCC00?style=flat-square)](https://linkedin.com/in/srushti-kumar-4019652a2)
 
+---
 
+## 📄 Professional Resume
 
-## 📄 Professional Credentials
-
-*   **Resume:** [Access Srushti's Resume here](https://drive.google.com/file/d/11hSNVNlePBWEOFvw_Y9CgN1E9OVlJvor/view?usp=sharing)
-*   **LinkedIn:** [Connect on LinkedIn](https://linkedin.com/in/srushti-kumar-4019652a2)
-*   **GitHub:** [View GitHub Profile](https://github.com/SrushtiKumar)
+You can view and download the latest professional resume via Google Drive:
+👉 **[View Latest Resume](https://drive.google.com/file/d/11hSNVNlePBWEOFvw_Y9CgN1E9OVlJvor/view?usp=sharing)**
