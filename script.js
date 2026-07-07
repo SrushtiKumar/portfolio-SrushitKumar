@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.setTimeout(() => {
                 submitBtn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent ✓';
                 submitBtn.style.backgroundColor = '#88D49E';
-                
+
                 logToConsole('Mail message sent successfully to Srushti Kumar.');
                 contactForm.reset();
 
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const minutes = String(now.getMinutes()).padStart(2, '0');
         const seconds = String(now.getSeconds()).padStart(2, '0');
         const ampm = hours >= 12 ? 'PM' : 'AM';
-        
+
         hours = hours % 12;
         hours = hours ? hours : 12; // 0 should map to 12
         const hoursStr = String(hours).padStart(2, '0');
@@ -139,10 +139,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 windowCard.style.transition = 'all 0.25s cubic-bezier(0.6, -0.28, 0.735, 0.045)';
                 windowCard.style.transform = 'scale(0.85)';
                 windowCard.style.opacity = '0';
-                
+
                 const title = windowCard.querySelector('.window-title')?.textContent.trim() || 'window';
                 logToConsole(`Closed Panel: ${title}`);
-                
+
                 setTimeout(() => {
                     windowCard.style.display = 'none';
                 }, 250);
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ];
 
         let lineIndex = 0;
-        
+
         const typeLine = () => {
             if (lineIndex >= lines.length) return;
 
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             let charIndex = 0;
-            
+
             const typeChar = () => {
                 if (charIndex < lineData.text.length) {
                     lineElement.textContent += lineData.text[charIndex];

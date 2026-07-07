@@ -528,6 +528,12 @@ a {
     font-size: 0.95rem;
 }
 
+.caption-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
 .polaroid-caption strong {
     font-size: 1.05rem;
 }
