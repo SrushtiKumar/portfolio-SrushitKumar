@@ -160,11 +160,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const lines = [
             { text: 'NAME: Srushti Kumar', type: 'info' },
-            { text: 'DEGREE: B.E. Computer Science & Design', type: 'info' },
+            { text: 'DEGREE: B.E. Computer Science & Design Engineering', type: 'info' },
             { text: 'CREDENTIAL: KSIT (Affiliated with VTU)', type: 'info' },
             { text: 'CGPA: 9.44 / 10.00', type: 'info' },
-            { text: 'FOCUS: Software Dev, QA Automation, Data Analytics', type: 'info' },
-            { text: 'TOOLKIT: Python | SQL | Java | JavaScript | React | FastAPI', type: 'info' },
+            { text: 'FOCUS: Data Science, Software Eng, QA & Automation', type: 'info' },
+            { text: 'TOOLKIT: Python | SQL | React | FastAPI | Selenium | scikit-learn | Power BI', type: 'info' },
             { text: 'PORTFOLIO STATUS: RUNNING AND ONLINE', type: 'success' }
         ];
 
