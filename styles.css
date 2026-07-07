@@ -171,7 +171,7 @@ a {
 
 /* Section Header Windows */
 .section-head-window {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .section-kicker {
@@ -596,10 +596,17 @@ a {
     height: 100%;
 }
 
+.content-column-window .window-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .content-column {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-grow: 1;
 }
 
 .timeline-card, .edu-card {
@@ -609,6 +616,9 @@ a {
     padding: 18px 20px;
     box-shadow: var(--retro-shadow-active);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .timeline-card:hover, .edu-card:hover {
@@ -838,6 +848,15 @@ a {
 
 .projects-grid .window-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.projects-grid .window-card .window-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .projects-grid .window-card:hover {
